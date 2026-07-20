@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.certora.com/en/latest/docs/user-guide/install.html
+docs: https://docs.certora.com/en/latest/docs/user-guide/install.html
+summary:
+  types: [apiKey]
+  api_key_in: [environment]
+notes: >-
+  The Certora Prover cloud service is authenticated with a per-user personal
+  access key. After installing certora-cli, the key is obtained from the Certora
+  Prover web application and supplied to the certoraRun tool via the CERTORAKEY
+  environment variable. There is no public OAuth or REST securityScheme; the CLI
+  is the sole documented client of the verification backend.
+schemes:
+- name: personalAccessKey
+  type: apiKey
+  in: environment
+  parameter: CERTORAKEY
+  source: docs.certora.com/en/latest/docs/user-guide/install.html
