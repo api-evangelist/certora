@@ -1,0 +1,44 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.certora.com/en/latest/docs/prover/cli/index.html
+name: Certora Prover CLI
+package: certora-cli
+docs: https://docs.certora.com/en/latest/docs/prover/cli/index.html
+install:
+- method: pip
+  command: pip3 install certora-cli
+- method: pip-beta
+  command: pip3 install certora-cli-beta
+auth:
+  scheme: personal-access-key
+  env_var: CERTORAKEY
+  notes: The Prover requires a personal access key obtained from the Certora Prover web app; set it in the CERTORAKEY environment variable.
+config:
+  format: conf (JSON5)
+  docs: https://docs.certora.com/en/latest/docs/prover/cli/conf-file-api.html
+commands:
+- name: certoraRun
+  summary: Invoke the Solidity/Vyper compiler and submit a formal-verification job to Certora's cloud servers.
+- name: certoraMutate
+  summary: Run mutation testing over specs (Gambit integration) to gauge rule quality.
+- name: certoraEqCheck
+  summary: Equivalence checking between contract implementations.
+option_groups:
+- name: Most frequently used
+  flags: [verify, msg, rule, exclude_rule, split_rules, method, exclude_method, parametric_contracts, wait_for_results]
+- name: Verification run type
+  flags: [coverage_info, foundry, independent_satisfy, multi_assert_check, multi_example, project_sanity, rule_sanity, short_output]
+- name: Solidity compiler control
+  flags: [solc, solc_optimize, solc_evm_version, solc_via_ir, compiler_map, packages, packages_path, vyper, solc_allow_path, ignore_solidity_warnings]
+- name: Loop handling
+  flags: [loop_iter, optimistic_loop]
+- name: Summarization & function resolution
+  flags: [auto_dispatcher, nondet_difficult_funcs, nondet_minimal_difficulty, optimistic_summary_recursion, summary_recursion_limit]
+- name: Performance
+  flags: [global_timeout, smt_timeout, max_concurrent_rules, compilation_steps_only, disable_local_type_checking]
+- name: Contract linking & addresses
+  flags: [address, link, struct_link, contract_extensions, contract_recursion_limit, optimistic_contract_recursion, optimistic_fallback]
+- name: Job metadata & dashboard
+  flags: [protocol_name, protocol_author, url_visibility]
+- name: Config & version management
+  flags: [override_base_config, prover_version, version]

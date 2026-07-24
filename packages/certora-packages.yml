@@ -1,0 +1,23 @@
+generated: '2026-07-18'
+method: searched
+source: https://pypi.org/project/certora-cli/
+packages:
+- language: python
+  registry: pypi
+  name: certora-cli
+  url: https://pypi.org/project/certora-cli/
+  install: pip3 install certora-cli
+  version: 8.17.1
+  license: GPL-3.0-only
+  source_code: https://github.com/Certora/CertoraProver
+  description: Runner for the Certora Prover (certoraRun) — build and run scripts for executing formal verification of smart contracts.
+  official: true
+- language: python
+  registry: pypi
+  name: certora-cli-beta
+  url: https://pypi.org/project/certora-cli-beta/
+  install: pip3 install certora-cli-beta
+  version: 8.17.1
+  source_code: https://github.com/Certora/CertoraProver
+  description: Beta channel of the Certora Prover runner for early-access features.
+  official: true

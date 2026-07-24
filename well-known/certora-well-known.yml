@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: live probes of /.well-known/ on Certora hosts
+notes: >-
+  No /.well-known/ discovery documents were found on the Certora website or docs
+  host. Certora publishes no security.txt, OpenID/OAuth discovery, api-catalog,
+  or ai-plugin.json. Recorded as honest negative results.
+hosts:
+- host: https://www.certora.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://docs.certora.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404

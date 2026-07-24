@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.certora.com/en/latest/docs/prover/changelog/prover_changelog.html
+product: Certora Prover
+scheme: semver
+current_version: 8.16.1
+entries:
+- version: 8.16.1
+  date: '2026-06-15'
+  breaking: false
+  highlights:
+  - Various bug fixes and performance improvements.
+- version: 8.13.0
+  date: '2026-05-05'
+  breaking: false
+  highlights:
+  - Added storage-path display for unresolved calls in EVM.
+  - Introduced rule-splitting support for Solana.
+  - Enabled multi-assert mode for Soroban smart contracts.
+- version: 8.11.3
+  date: '2026-04-21'
+  breaking: false
+  highlights:
+  - Launched CVL `links` block for binding storage variables directly in specs with full type checking.
+  - Enhanced TAC dump HTML with browser navigation and dataflow visualization.
+  - Improved requireInvariant semantics for strong invariants.
+- version: 8.8.0
+  date: '2026-02-09'
+  breaking: false
+  highlights:
+  - Added builtin rules for detecting unchecked arithmetic overflow and unsafe casting operations.
+  - Method filtering now accepts unparameterized names matching all overloads.
+- version: 8.6.3
+  date: '2026-01-06'
+  breaking: false
+  highlights:
+  - Enhanced invariant base-case expressiveness by zeroing only currentContract storage.
+  - Introduced prover_args flag for preserving previous behavior.

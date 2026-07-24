@@ -1,8 +1,31 @@
 aid: certora
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/certora.png
 name: Certora
-description: 'Certora is a company surfaced as a portfolio company of electric-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: >-
+  Certora is a smart-contract security company whose core product is the Certora
+  Prover, a state-of-the-art automated formal-verification engine that checks
+  every possible contract state and execution path to find critical
+  vulnerabilities in smart contracts running on EVM-based chains, Solana,
+  Stellar (Soroban), and Sui. Developers write rules in the Certora Verification
+  Language (CVL) and submit verification jobs to Certora's cloud from the
+  command line using the open-source certora-cli (certoraRun) tool, which
+  authenticates with a personal access key. Alongside the Prover, Certora offers
+  the Gambit mutation-testing tool, expert manual audits, and verification
+  contests, and reports protecting over $100B in total value locked across major
+  DeFi protocols. This profile was surfaced as an Electric Capital portfolio
+  company and enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/certora/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
+- Formal Verification
+- Smart Contracts
+- Blockchain
+- Developer Tools
+- CLI
+- Web3
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +54,44 @@ maintainers:
 common:
 - type: Website
   url: https://www.certora.com/
+- type: DeveloperPortal
+  url: https://docs.certora.com/
+- type: Documentation
+  url: https://docs.certora.com/en/latest/
+- type: APIReference
+  url: https://docs.certora.com/en/latest/docs/prover/cli/index.html
+- type: GettingStarted
+  url: https://docs.certora.com/en/latest/docs/user-guide/install.html
+- type: Blog
+  url: https://www.certora.com/blog
+- type: Pricing
+  url: https://www.certora.com/pricing
+- type: SignUp
+  url: https://prover.certora.com/
+- type: TermsOfService
+  url: https://www.certora.com/terms
+- type: PrivacyPolicy
+  url: https://www.certora.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/Certora
+- type: Packages
+  url: packages/certora-packages.yml
+- type: SDKs
+  url: packages/certora-packages.yml
+- type: CLI
+  url: cli/certora-cli.yml
+- type: ChangeLog
+  url: changelog/certora-changelog.yml
+- type: Authentication
+  url: authentication/certora-authentication.yml
+- type: Lifecycle
+  url: lifecycle/certora-lifecycle.yml
+- type: LLMsTxt
+  url: llms/certora-llms.txt
+- type: DomainSecurity
+  url: security/certora-domain-security.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

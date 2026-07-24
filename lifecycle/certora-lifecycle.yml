@@ -1,0 +1,21 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.certora.com/en/latest/docs/prover/changelog/prover_changelog.html
+versioning:
+  scheme: semver
+  current: 8.16.1
+  docs: https://docs.certora.com/en/latest/docs/prover/changelog/prover_changelog.html
+  channels:
+  - name: stable
+    package: certora-cli
+  - name: beta
+    package: certora-cli-beta
+  pinning: The CLI supports pinning the backend prover build with the prover_version flag.
+release_notes: https://docs.certora.com/en/latest/docs/prover/changelog/prover_changelog.html
+deprecation:
+  policy_url: null
+  sunset_header: false
+  notes: No formal deprecation/sunset policy published; behavior-preservation is offered ad hoc via prover_args.
+status_page: null
+sla:
+  url: null
