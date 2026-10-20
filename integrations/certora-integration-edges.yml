@@ -38,6 +38,46 @@ edges:
     detected: '2026-10-18'
   detected_by: sweep-official-sdks.py
   first_seen: '2026-10-18'
+- partner_name: PyPI
+  partner: pypi
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official CLI (PyPI)
+  evidence: https://pypi.org/project/certora-cli/
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: PyPI (public package index)
+    spec_file: null
+    packages:
+    - name: certora-cli
+      version: 8.20.2
+      released: '2026-10-16'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/certora-cli/
+      cli: 'PyPI name/summary: Runner for the Certora Prover'
+      repo_leg: domain:certora.com
+      publisher_leg: email:certora.com
+      matched_by: domain
+    - name: certora-cli-beta
+      version: 8.20.2
+      released: '2026-10-16'
+      released_field: upload_time
+      lapsed: false
+      page: https://pypi.org/project/certora-cli-beta/
+      cli: 'PyPI name/summary: Runner for the Certora Prover'
+      repo_leg: domain:certora.com
+      publisher_leg: email:certora.com
+      matched_by: domain
+    current: true
+    signal_note: 'the provider''s own command-line tool on a package manager: distribution, not an integration;
+      lapsed = no release in 24 months or deprecated / disabled by the manager'
+    detected_by: sweep-official-clis.py
+    detected: '2026-10-20'
+  detected_by: sweep-official-clis.py
+  first_seen: '2026-10-20'
 generated: '2026-10-18'
 method: searched
 source:
@@ -50,7 +90,12 @@ source:
 - https://rubygems.org/api/v1
 checked:
 - https://api.nuget.org/v3
+- https://cdn.winget.microsoft.com/cache
 - https://crates.io/api/v1
+- https://formulae.brew.sh/api/cask.json
+- https://formulae.brew.sh/api/formula.json
+- https://github.com/ScoopInstaller/Extras
+- https://github.com/ScoopInstaller/Main
 - https://proxy.golang.org
 - https://pypi.org/pypi
 - https://registry.npmjs.org
