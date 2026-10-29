@@ -64,6 +64,89 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Certora is a company surfaced as a portfolio company of electric-capital and added to the API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the enrichment pipeline.
+Certora is a smart-contract security company whose core product is the Certora Prover, a state-of-the-art automated formal-verification engine that checks every possible contract state and execution path to find critical vulnerabilities in smart contracts running on EVM-based chains, Solana, Stellar (Soroban), and Sui. Developers write rules in the Certora Verification Language (CVL) and submit verification jobs to Certora's cloud from the command line using the open-source certora-cli (certoraRun) tool, which authenticates with a personal access key. Alongside the Prover, Certora offers the Gambit mutation-testing tool, expert manual audits, and verification contests, and reports protecting over $100B in total value locked across major DeFi protocols. This profile was surfaced as an Electric Capital portfolio company and enriched by the API Evangelist pipeline.
 
-Backed by: electric-capital — https://www.certora.com/
+**Areas:** Company · Security · Formal Verification · Smart Contracts · Blockchain · Developer Tools · CLI · Web3
+
+## Certora on APIs.io
+
+Everything profiled for Certora is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/certora/](https://apis.io/providers/certora/)** — or go straight to one of the APIs or properties below.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Certora Authentication](https://apis.io/security/certora/certora-authentication/)
+- [Certora Domain Security](https://apis.io/security/certora/certora-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.certora.com/)
+- [Documentation](https://docs.certora.com/en/latest/)
+- [Getting started](https://docs.certora.com/en/latest/docs/user-guide/install.html)
+- [API reference](https://docs.certora.com/en/latest/docs/prover/cli/index.html)
+- [Pricing](https://www.certora.com/pricing)
+- [Sign up](https://prover.certora.com/)
+- [Blog](https://www.certora.com/blog)
+- [Terms of service](https://www.certora.com/terms)
+- [Privacy policy](https://www.certora.com/privacy)
+- [GitHub](https://github.com/Certora)
+
+## API Evangelist rating
+
+**Kin Score 30.9** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 55.4 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 18.4 |
+| Developer ergonomics | 66.7 |
+| Access clarity | 44.7 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 19.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/certora/](https://apis.io/providers/certora/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Certora: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/certora/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
